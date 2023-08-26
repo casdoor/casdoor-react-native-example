@@ -40,7 +40,7 @@ react-native run-android
 
 ## Configure
 
-Initialization requires 6 parameters, which are all str type:
+Initialization requires 5 parameters, which are all str type:
 | Name         | Must | Description                                            |
 | ------------ | ---- | ------------------------------------------------------ |
 | serverUrl    | Yes  | Casdoor Server Url, such as `https://door.casdoor.com` |
@@ -48,7 +48,6 @@ Initialization requires 6 parameters, which are all str type:
 | appName      | Yes  | Application name                                       |
 | clientId     | Yes  | Your client id                                         |
 | clientSecret | Yes  | Your client secret                                     |
-|              |      |                                                        |
 
 ```javascript
   const Config = {
