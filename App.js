@@ -61,12 +61,7 @@ const App = () => {
           const responseData = await response.json();
           const token = responseData.access_token;
           const userInfo = jwtDecode(token);
-          // console.log('UserInfo:', userInfo);
-          // console.log('UserInfo.name', userInfo.name);
-          // console.log('UserInfo.avatar', userInfo.avatar);
-          // console.log('UserInfo.createdTime', userInfo.createdTime);
-          // console.log('UserInfo.owner', userInfo.owner);
-
+          
           setUserInfo(userInfo);
         }
       } catch (error) {
