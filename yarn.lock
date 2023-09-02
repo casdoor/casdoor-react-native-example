@@ -2176,7 +2176,7 @@ caniuse-lite@^1.0.30001517:
 
 casdoor-react-native-sdk@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.0.0.tgz#0e36166b51891aa5f749741540be38143880d4d1"
+  resolved "https://registry.yarnpkg.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.0.0.tgz#0e36166b51891aa5f749741540be38143880d4d1"
   integrity sha512-jbsQBNfCSlikYzcS6kuAvugjRyaxnxr3BUxqlCvZWuJLQldmCBfW7g0dvLMR//nMHl5Fv0fiSJYLvWSnjqXVeA==
   dependencies:
     "@react-native-async-storage/async-storage" "^1.19.3"
