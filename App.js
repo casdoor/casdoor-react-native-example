@@ -8,8 +8,9 @@
 
 import React, { useState } from 'react';
 import { WebView } from 'react-native-webview';
-import jwtDecode from 'jwt-decode';
 import {Image, LogBox, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, useColorScheme, View} from 'react-native';
+import SDK from 'casdoor-react-native-sdk';
+
 const App = () => {
   LogBox.ignoreAllLogs();
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,55 +19,42 @@ const App = () => {
     backgroundColor: isDarkMode ? 'black' : 'white',
   };
 
-  const Config = {
+  const sdkConfig = {
     serverUrl: 'https://door.casdoor.com',
     clientId: 'b800a86702dd4d29ec4d',
     clientSecret: '1219843a8db4695155699be3a67f10796f2ec1d5',
     appName: 'app-example',
+    organizationName: 'casbin',
     redirectPath: 'http://localhost:5000/callback',
+    signinPath: '/api/signin',
   };
-
-  const casdoorLoginURL = 'https://door.casdoor.com/login/oauth/authorize' +
-      `?client_id=${Config.clientId}&response_type=code&redirect_uri=${Config.redirectPath}&scope=read&state=${Config.appName}`;
+  const sdk = new SDK(sdkConfig);
 
   const [webViewVisible, setWebViewVisible] = useState(false);
   const [scrollViewVisible, setScrollViewVisible] = useState(true);
   const [userInfo, setUserInfo] = useState(null);
+  const [casdoorLoginURL, setCasdoorLoginURL] = useState('');
 
-  const handleCasdoorLogin = () => {
+  const handleCasdoorLogin = async () => {
     setScrollViewVisible(false);
     setWebViewVisible(true);
+
+    const signinUrl = await sdk.getSigninUrl();
+    setCasdoorLoginURL(signinUrl);
   };
 
   const handleLogout = () => {
     setUserInfo(null);
     setWebViewVisible(false);
     setScrollViewVisible(true);
+    sdk.clearState();
   };
 
   const onNavigationStateChange = async(navState) => {
-    if (navState.url.startsWith(Config.redirectPath)) {
-      const codeStartIndex = navState.url.indexOf('code=') + 5;
-      const codeEndIndex = navState.url.indexOf('&', codeStartIndex);
-      const code = navState.url.substring(codeStartIndex, codeEndIndex);
-      const stateStartIndex = navState.url.indexOf('state=') + 6;
-      const state = navState.url.substring(stateStartIndex);
-      try {
-        const response = await fetch(`${Config.serverUrl}/api/login/oauth/access_token?client_id=${Config.clientId}&client_secret=${Config.clientSecret}&grant_type=authorization_code&code=${code}`,
-            {
-          method: 'POST',
-          credentials: "include",
-        });
-        if (response.ok) {
-          const responseData = await response.json();
-          const token = responseData.access_token;
-          const userInfo = jwtDecode(token);
-          
-          setUserInfo(userInfo);
-        }
-      } catch (error) {
-        console.error('Error during Signin Request:', error);
-      }
+    if (navState.url.startsWith(sdkConfig.redirectPath)) {
+      const token = await sdk.getAccessToken(navState.url);
+      const userInfo = sdk.JwtDecode(token);
+      setUserInfo(userInfo);
 
       setWebViewVisible(false);
       setScrollViewVisible(false);

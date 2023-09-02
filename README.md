@@ -1,5 +1,6 @@
 # casdoor-react-native-example
 
+This example uses [casdoor-react-native-sdk](https://github.com/casdoor/casdoor-react-native-sdk).
 This example describes how to use casdoor in [react-native](https://reactnative.dev/).
 
 ## Quick Start
@@ -50,13 +51,15 @@ Initialization requires 5 parameters, which are all str type:
 | clientSecret | Yes  | Your client secret                                     |
 
 ```javascript
-  const Config = {
-    serverUrl: 'https://door.casdoor.com',
-    clientId: <your clientId>,
-    clientSecret: <your clientSecret>,
-    appName: 'app-example',
-    redirectPath: 'http://localhost:5000/callback',
-  };
+  const sdkConfig = {
+  serverUrl: 'https://door.casdoor.com',
+  clientId: 'b800a86702dd4d29ec4d',
+  clientSecret: '1219843a8db4695155699be3a67f10796f2ec1d5',
+  appName: 'app-example',
+  organizationName: 'casbin',
+  redirectPath: 'http://localhost:5000/callback',
+  signinPath: '/api/signin',
+};
 ```
 
 ## License
