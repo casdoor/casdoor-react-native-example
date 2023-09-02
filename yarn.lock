@@ -1155,7 +1155,7 @@
 
 "@react-native-async-storage/async-storage@^1.19.3":
   version "1.19.3"
-  resolved "https://registry.npmmirror.com/@react-native-async-storage/async-storage/-/async-storage-1.19.3.tgz#ad5fe3ed0a82d4624aa4500321c1e09c02daeb46"
+  resolved "https://registry.yarnpkg.com.com/@react-native-async-storage/async-storage/-/async-storage-1.19.3.tgz#ad5fe3ed0a82d4624aa4500321c1e09c02daeb46"
   integrity sha512-CwGfoHCWdPOTPS+2fW6YRE1fFBpT9++ahLEroX5hkgwyoQ+TkmjOaUxixdEIoVua9Pz5EF2pGOIJzqOTMWfBlA==
   dependencies:
     merge-options "^3.0.4"
@@ -2176,7 +2176,7 @@ caniuse-lite@^1.0.30001517:
 
 casdoor-react-native-sdk@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmmirror.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.0.0.tgz#0e36166b51891aa5f749741540be38143880d4d1"
+  resolved "https://registry.yarnpkg.com.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.0.0.tgz#0e36166b51891aa5f749741540be38143880d4d1"
   integrity sha512-jbsQBNfCSlikYzcS6kuAvugjRyaxnxr3BUxqlCvZWuJLQldmCBfW7g0dvLMR//nMHl5Fv0fiSJYLvWSnjqXVeA==
   dependencies:
     "@react-native-async-storage/async-storage" "^1.19.3"
@@ -3780,7 +3780,7 @@ is-path-inside@^3.0.3:
 
 is-plain-obj@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.npmmirror.com/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+  resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
   integrity sha512-YWnfyRwxL/+SsrWYfOpUtz5b3YD+nyfkHvjbcanzk8zgyO4ASD67uVMRt8k5bM4lLMDnXfriRhOpemw+NfT1eA==
 
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
@@ -4533,7 +4533,7 @@ jsonfile@^4.0.0:
 
 jwt-decode@^3.1.2:
   version "3.1.2"
-  resolved "https://registry.npmmirror.com/jwt-decode/-/jwt-decode-3.1.2.tgz#3fb319f3675a2df0c2895c8f5e9fa4b67b04ed59"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-3.1.2.tgz#3fb319f3675a2df0c2895c8f5e9fa4b67b04ed59"
   integrity sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
@@ -4713,7 +4713,7 @@ map-visit@^1.0.0:
 
 merge-options@^3.0.4:
   version "3.0.4"
-  resolved "https://registry.npmmirror.com/merge-options/-/merge-options-3.0.4.tgz#84709c2aa2a4b24c1981f66c179fe5565cc6dbb7"
+  resolved "https://registry.yarnpkg.com/merge-options/-/merge-options-3.0.4.tgz#84709c2aa2a4b24c1981f66c179fe5565cc6dbb7"
   integrity sha512-2Sug1+knBjkaMsMgf1ctR1Ujx+Ayku4EdJN4Z+C2+JzoeF7A3OZ9KM2GY0CpQS51NR61LTurMJrRKPhSs3ZRTQ==
   dependencies:
     is-plain-obj "^2.1.0"
