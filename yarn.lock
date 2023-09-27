@@ -2174,13 +2174,14 @@ caniuse-lite@^1.0.30001517:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001523.tgz#b838f70b1a98c556776b998fafb47d2b64146d4f"
   integrity sha512-I5q5cisATTPZ1mc588Z//pj/Ox80ERYDfR71YnvY7raS/NOk8xXlZcB0sF7JdqaV//kOaa6aus7lRfpdnt1eBA==
 
-casdoor-react-native-sdk@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.0.0.tgz#0e36166b51891aa5f749741540be38143880d4d1"
-  integrity sha512-jbsQBNfCSlikYzcS6kuAvugjRyaxnxr3BUxqlCvZWuJLQldmCBfW7g0dvLMR//nMHl5Fv0fiSJYLvWSnjqXVeA==
+casdoor-react-native-sdk@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.1.0.tgz#9c12160363b6801a00dd67fd01bdd93c39ef64b5"
+  integrity sha512-qoeOpoEcDkl7JZja8v3XS0YsVB/Ileb/KdSkncVuAviOP06fFya6nHAzvgktyT0kiieEqmvhP7xDOIm8os6LGA==
   dependencies:
     "@react-native-async-storage/async-storage" "^1.19.3"
     jwt-decode "^3.1.2"
+    react-native-pkce-challenge "^5.2.0"
 
 chalk@^2.0.1, chalk@^2.4.2:
   version "2.4.2"
@@ -2443,6 +2444,11 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+crypto-js@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
+  integrity sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==
 
 dayjs@^1.8.15:
   version "1.11.9"
@@ -5692,6 +5698,13 @@ react-native-gradle-plugin@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.6.tgz#b61a9234ad2f61430937911003cddd7e15c72b45"
   integrity sha512-eIlgtsmDp1jLC24dRn43hB3kEcZVqx6DUQbR0N1ABXGnMEafm9I3V3dUUeD1vh+Dy5WqijSoEwLNUPLgu5zDMg==
+
+react-native-pkce-challenge@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-pkce-challenge/-/react-native-pkce-challenge-5.2.0.tgz#8696bba05062a463bb4a695366c11c35ad3f1202"
+  integrity sha512-iuOi0t8NfTzOLFkGECyVHgdUeqawKQYXdW7O4/4MncGHGYnWMCPk4EKvdPdmricIXfPq18uKb5w5RacMo25poA==
+  dependencies:
+    crypto-js "3.3.0"
 
 react-native-webview@^13.4.0:
   version "13.4.0"

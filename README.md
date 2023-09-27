@@ -48,7 +48,6 @@ Initialization requires 7 parameters, which are all str type:
 | redirectPath | Yes  | redirectPath                                           |
 | appName      | Yes  | Application name                                       |
 | clientId     | Yes  | Your client id                                         |
-| clientSecret | Yes  | Your client secret                                     |
 | organizationName     | Yes  | the name of the Casdoor organization connected with your Casdoor application                    |
 | signinPath     | No  | the path of the signin URL for your Casdoor application, will be `/api/signin` if not provided              |
 
@@ -57,7 +56,6 @@ Initialization requires 7 parameters, which are all str type:
   const sdkConfig = {
   serverUrl: 'https://door.casdoor.com',
   clientId: 'b800a86702dd4d29ec4d',
-  clientSecret: '1219843a8db4695155699be3a67f10796f2ec1d5',
   appName: 'app-example',
   organizationName: 'casbin',
   redirectPath: 'http://localhost:5000/callback',

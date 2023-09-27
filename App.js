@@ -22,7 +22,6 @@ const App = () => {
   const sdkConfig = {
     serverUrl: 'https://door.casdoor.com',
     clientId: 'b800a86702dd4d29ec4d',
-    clientSecret: '1219843a8db4695155699be3a67f10796f2ec1d5',
     appName: 'app-example',
     organizationName: 'casbin',
     redirectPath: 'http://localhost:5000/callback',
