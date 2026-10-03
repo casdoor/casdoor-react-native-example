@@ -2018,6 +2018,14 @@ caniuse-lite@^1.0.30001813:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001814.tgz#7a9e1d107dd60f6ad3dacc74df6f6d53a9dbcf9b"
   integrity sha512-/Uaf1lAzr59XcMpW0o96WoEfr+VXK2OX4U9AgFoiSHsVJ4HppnIFUjtYzsyDH2+tgANaQb2/oxYGwCPapN1FpA==
 
+casdoor-react-native-sdk@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/casdoor-react-native-sdk/-/casdoor-react-native-sdk-1.2.0.tgz#6e9277b3bdbfe9826166955c72171cc568f485bd"
+  integrity sha512-Z/A+0vYLtHvu6jvUrJnfPrynmNzahIgLNvCbRI0KxwpRIyQhvC8dJQSUjwuv6cdbLGas7E5gW9P5o6KRWF1/JA==
+  dependencies:
+    jwt-decode "^3.1.2"
+    pkce-challenge "3.1.0"
+
 chalk@^2.0.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
