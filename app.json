@@ -1,4 +1,21 @@
 {
-  "name": "casdoor_react_native_example",
-  "displayName": "casdoor_react_native_example"
+  "expo": {
+    "name": "Casdoor Example",
+    "slug": "casdoor-react-native-example",
+    "version": "1.0.0",
+    "scheme": "casdoorexample",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.casdoor.example"
+    },
+    "android": {
+      "package": "com.casdoor.example"
+    },
+    "plugins": [
+      "expo-web-browser",
+      "expo-status-bar"
+    ]
+  }
 }
